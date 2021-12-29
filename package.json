@@ -1,0 +1,29 @@
+{
+  "name": "fullstackopen2021-part3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErikLiljeroth/fullstackopen2021-part3.git"
+  },
+  "author": "Erik Liljeroth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ErikLiljeroth/fullstackopen2021-part3/issues"
+  },
+  "homepage": "https://github.com/ErikLiljeroth/fullstackopen2021-part3#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
+}
