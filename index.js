@@ -11,6 +11,8 @@ morgan.token('reqbody', (request, response) => (JSON.stringify(request.body)))
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms :reqbody'))
 // Enable inter-origin http requests
 app.use(cors())
+// Middleware to serve static builds
+app.use(express.static('build'))
 
 let persons = [
 	{
@@ -35,7 +37,7 @@ let persons = [
 	}
 ]
 
-app.get('/', (request, response) => (response.send('<h1>Front page!</h1>')))
+app.get('/', (request, response) => (response.send('<h1>This page only shows if front end static build is broken</h1>')))
 
 app.get('/info/', (request, response) => {
 	response.send(`<p>Phonebook has info for ${persons.length} people.</p><p>${new Date}</p>`)
