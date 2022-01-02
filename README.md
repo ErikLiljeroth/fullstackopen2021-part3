@@ -1,1 +1,1 @@
-https://rocky-brook-01672.herokuapp.com/api/persons
+Link to application: https://rocky-brook-01672.herokuapp.com/
